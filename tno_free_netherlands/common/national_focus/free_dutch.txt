@@ -1,0 +1,401 @@
+﻿focus_tree = {
+	id = free_dutch_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SUR
+		}
+
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1200 }
+
+	focus = {
+		id = SUR_powering_the_light
+		icon = GFX_focus_SUR_power_the_lights
+		x = 8
+		y = 0
+		#relative_position_id = 
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 4
+		prerequisite = { focus =  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SUR = { country_event = { id = vrijdutch.1 } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_corporate_nation
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_powering_the_light
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 4
+		prerequisite = { focus = SUR_powering_the_light }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_the_islands #LEFT CHAIN
+		icon = GFX_goal_generic_major_alliance
+		x = -1
+		y = 1
+		relative_position_id = SUR_corporate_nation
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_corporate_nation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_de_hoeksteen
+		icon = GFX_goal_generic_major_alliance
+		x = -2
+		y = 1
+		relative_position_id = SUR_the_islands
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_the_islands }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_pearl_of_the_caribbean
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_the_islands
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_the_islands }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_bernhards_web
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_de_hoeksteen
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_de_hoeksteen }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_neckbreakers
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_pearl_of_the_caribbean
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_pearl_of_the_caribbean }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_the_mainland #RIGHT CHAIN
+		icon = GFX_goal_generic_major_alliance
+		x = 1
+		y = 1
+		relative_position_id = SUR_corporate_nation
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_corporate_nation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_industrial_lights
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_the_mainland
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_the_mainland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_the_last_sapling
+		icon = GFX_goal_generic_major_alliance
+		x = 2
+		y = 1
+		relative_position_id = SUR_the_mainland
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_the_mainland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_progress_in_mauritsstad
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_industrial_lights
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_industrial_lights }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_congo_connection
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		relative_position_id = SUR_the_last_sapling
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_the_last_sapling }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = SUR_airfield_vote
+		icon = GFX_goal_generic_major_alliance
+		x = 1
+		y = 2
+		relative_position_id = SUR_neckbreakers
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cost = 2
+		prerequisite = { focus = SUR_neckbreakers }
+		prerequisite = { focus = SUR_bernhards_web }
+		prerequisite = { focus = SUR_progress_in_mauritsstad }
+		prerequisite = { focus = SUR_congo_connection }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+}

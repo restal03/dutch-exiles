@@ -1,0 +1,31 @@
+﻿###########################
+# Vrij Nederland events
+###########################
+
+add_namespace = vrijdutch
+
+country_event = {
+	id = vrijdutch.1
+	title = vrijdutch.1.t
+	desc = vrijdutch.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vrijdutch.1.a
+	}
+}
+
+country_event = {
+	id = vrijdutch.2
+	title = vrijdutch.2.t
+	desc = vrijdutch.2.d
+	picture = GFX_report_event_vrij_beach
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vrijdutch.2.a
+	}
+}
